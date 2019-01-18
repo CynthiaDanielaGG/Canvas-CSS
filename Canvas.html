@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>Velas</title>
+  <script> window.onload = function(){
+    //Recibimos el elemento canvas
+    var elemento = document.getElementById('micanvas');
+    //Comprobación sobre si encontramos un elemento
+    //y podemos extraer su contexto con getContext(), que indica compatibilidad con canvas
+    if (elemento && elemento.getContext) {
+      //Accedo al contexto de '2d' de este canvas, necesario para dibujar
+
+      var contexto = elemento.getContext('2d');
+      var Gradiente1 = contexto.createLinearGradient(0,220, 0, 350);
+      Gradiente1.addColorStop(0, "pink");
+      Gradiente1.addColorStop(1, "purple");
+      var Gradiente2 = contexto.createLinearGradient(0, 20, 0, 170);
+      Gradiente2.addColorStop(0,"blue");
+      Gradiente2.addColorStop(1, "yellow");
+      var Gradiente3 = contexto.createLinearGradient(0,50, 0, 160);
+      Gradiente3.addColorStop(0,"white");
+      Gradiente3.addColorStop(1, "brown");
+      //Gradiente radial
+var grd=contexto.createRadialGradient(270,100,5,285,70,100);
+//var grd=contexto.createRadialGradient(75,50,5,90,60,100);
+        //contexto.arc(270,100,60,0,Math.PI*2,false);
+      grd.addColorStop(0,"black");
+      grd.addColorStop(1,"yellow");
+
+
+      //
+      var grd2=contexto.createRadialGradient(270,160,5,285,180,100);
+      //var grd=contexto.createRadialGradient(75,50,5,90,60,100);
+              //contexto.arc(270,100,60,0,Math.PI*2,false);
+            grd2.addColorStop(0,"white");
+            grd2.addColorStop(1,"purple");
+
+// Fill with gradient
+
+
+      if (contexto) {
+        //Si tengo el contexto 2d es que todo ha ido bien y puedo empezar a dibujar en el canvas
+        //cambio el color de estilo de dibujo a rojo
+        //contexto.fillStyle = '#DD4582';
+        //contexto.strokeStyle = '#E07FA6';
+          contexto.fillStyle =Gradiente1;
+        //dibujo otro rectángulo
+        contexto.fillRect(200, 200, 150, 250);
+
+        //flama
+        //contorno
+        //contexto.fill();   //segundo camino, en naranja
+        //contexto.fillStyle = Gradiente3;
+        //contexto.beginPath();
+        //contexto.arc(280,120,58,0,Math.PI*2,false);
+        //contexto.fill();
+
+        //flama
+        contexto.fill();
+        contexto.fillStyle=grd;
+        //segundo camino, en naranja
+        contexto.beginPath();
+        contexto.arc(280,100,60,0,Math.PI*2,false);
+        contexto.fill();
+/////////////77////////
+contexto.fill();
+contexto.fillStyle=grd2;
+//segundo camino, en naranja
+contexto.beginPath();
+contexto.arc(275,200,50,0,Math.PI*1,false);
+contexto.fill();
+
+        ////////////
+         contexto.fill();   //segundo camino, en naranja
+         contexto.fillStyle = Gradiente2;
+         contexto.beginPath();
+         contexto.arc(280,130,30,0,Math.PI*2,false);
+         contexto.fill();
+
+
+         contexto.beginPath();
+   		   contexto.moveTo(280,70);
+   		   contexto.lineTo(250,130);
+   		   contexto.lineTo(310,130);
+      		   contexto.fill();
+
+        //plato
+        contexto.fill();   //segundo camino, en naranja
+        contexto.fillStyle = Gradiente3;
+        contexto.beginPath();
+        contexto.arc(270,450,100,0,Math.PI*1,false);
+        contexto.fill();
+        //mecha
+        contexto.fillStyle ="black";
+      //dibujo otro rectángulo
+      contexto.fillRect(275, 140, 5, 80);
+
+
+
+      }
+    }
+  }
+  </script>
+</head>
+<body bgcolor="black">
+  <canvas id="micanvas" width="800" height="800" > Este texto se muestra para los navegadores no compatibles con canvas.
+    <br> Por favor, utiliza Firefox, Chrome, Safari u Opera.
+  </canvas>
+</body>
+</html>

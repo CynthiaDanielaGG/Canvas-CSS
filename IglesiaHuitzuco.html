@@ -1,0 +1,444 @@
+<html>
+  <head>
+    <title> Iglesia Santiago</title>
+    <script>
+    window.onload = function(){
+      //Recibimos el elemento canvas
+      var elemento = document.getElementById('micanvas');
+      //Comprobación sobre si encontramos un elemento
+      //y podemos extraer su contexto con getContext(), que indica compatibilidad con canvas
+      if (elemento && elemento.getContext) {
+        //Accedo al contexto de '2d' de este canvas, necesario para dibujar
+        var contexto = elemento.getContext('2d');
+        var Gradiente1 = contexto.createLinearGradient(0, 0, 0, 600);
+        Gradiente1.addColorStop(0, "blue");
+        Gradiente1.addColorStop(1, "white");
+        var Gradiente2 = contexto.createLinearGradient(5,40, 0, 65);
+        Gradiente2.addColorStop(0,"white");
+        Gradiente2.addColorStop(1, "gray");
+
+
+        if (contexto) {
+
+
+          //dibujo otro rectángulo
+          contexto.fillStyle = Gradiente1;
+          contexto.fillRect(0, 0, 1200, 1000);
+          contexto.fillStyle ="#F7FCB0";
+          x=50;
+          y=400;
+          alto =1000;
+          ancho=400;
+          contexto.fillRect(x,y, alto, ancho);
+
+          contexto.fillRect(50, 250, 150, 150);
+          nx=x+10;
+          ny=y+10;
+          //primera columna
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+20;
+            ny=ny+50;
+          }
+          //segunda columna
+          nx=x+10;
+          ny=y+35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 25, 20);
+            //nx=nx+20;
+            ny=ny+50;
+          }
+          //tercera columna
+          nx=x + 65;
+          ny=y +10;
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //cuarta columna
+          nx=x + 40;
+          ny=y +35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //Quita columna
+          nx=x+120;
+          ny=y+10;
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 25, 20);
+            //nx=nx+20;
+            ny=ny+50;
+          }
+          //sexta columna
+          nx=x+95;
+          ny=y+35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+20;
+            ny=ny+50;
+          }
+          // Columna grande
+          //primera columna
+          nx=x+700;
+          ny=y+10;
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+20;
+            ny=ny+50;
+          }
+          //segundA columna
+
+          nx=x+700;
+          ny=y+35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 25, 20);
+            //nx=nx+20;
+            ny=ny+50;
+          }
+          //
+          //tercera columna
+          nx=x + 755;
+          ny=y +10;
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //cuarta columna
+          nx=x + 730;
+          ny=y +35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //QUINTA columna
+          nx=x + 810;
+          ny=y +10;
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //sexta columna
+          nx=x + 865;
+          ny=y +10;
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //septima columna
+          nx=x + 920;
+          ny=y +10;
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //bloques abajo
+          nx=x + 785;
+          ny=y +35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //bloques abajo
+          nx=x + 840;
+          ny=y +35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //bloques abajo
+          nx=x + 895;
+          ny=y +35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 50, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //bloques abajo
+          nx=x + 950;
+          ny=y +35;
+          for(i=0; i < 7; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 40, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          //septima columna
+          nx=x + 975;
+          ny=y +10;
+          for(i=0; i < 8; i++ ){
+            contexto.fillStyle ="#FAB2A4";
+            contexto.fillRect(nx, ny, 15, 20);
+            //nx=nx+10;
+            ny=ny+50;
+          }
+          contexto.fillStyle="white";
+          contexto.fillRect(80,305, 90,90);
+
+
+          //medio circulo
+          contexto.fill();   //segundo camino, en naranja
+          contexto.fillStyle = "white";
+          contexto.beginPath();
+          contexto.arc(125,315,45,0,Math.PI*2,false);
+          contexto.fill();
+      //dentro
+      contexto.fillStyle="#FAB2A4";
+      contexto.fillRect(90,320, 70,70);
+
+
+         //segundo camino, en naranja
+      contexto.fillStyle = "#FAB2A4";
+      contexto.beginPath();
+      contexto.arc(125,315,35,0,Math.PI*2,false);
+      contexto.fill();
+
+      //dentro
+      contexto.fillStyle=Gradiente1;
+      contexto.fillRect(95,320, 60,65);
+         //segundo camino, en naranja
+      contexto.fillStyle = Gradiente1;
+      contexto.beginPath();
+      contexto.arc(125,315,30,0,Math.PI*2,false);
+      contexto.fill();
+      //COLUMNAS
+      contexto.fillStyle="#FFFFFF";
+      contexto.fillRect(60,270, 10,125);
+      //columna 2
+      contexto.fillStyle="white";
+      contexto.fillRect(180,270, 10,125);
+      //detalle columna
+      contexto.fillStyle="pink";
+      contexto.fillRect(180,270, 10,5);
+      contexto.fillStyle="pink";
+      contexto.fillRect(183,275, 5,5);
+      //
+      contexto.fillStyle="pink";
+      contexto.fillRect(60,270, 10,5);
+      contexto.fillStyle="pink";
+      contexto.fillRect(63,275, 5,5);
+      //detalle abajo
+      contexto.fillStyle="pink";
+      contexto.fillRect(180,390, 10,5);
+      contexto.fillStyle="pink";
+      contexto.fillRect(183,385, 5,5);
+      //
+      contexto.fillStyle="pink";
+      contexto.fillRect(60,390, 10,5);
+      contexto.fillStyle="pink";
+      contexto.fillRect(63,385, 5,5);
+      a=375;
+      for(i=0; i < 10; i++){
+        contexto.fillRect(63,a, 5,5);
+        contexto.fillRect(183,a,5,5);
+        a=a-10;
+      }
+      //campana
+      contexto.fillStyle = "#C98703";
+      contexto.beginPath();
+      contexto.arc(126,325,25,3.1,Math.PI*2,false);
+      contexto.fill();
+      contexto.fillRect(101,325,50,40);
+      //cadena
+      cy=280;
+      for(i=0;i<10;i++){
+      contexto.fillRect(122,cy, 5,5);
+      cy=cy+5;
+      }
+      //reloj
+      contexto.fillStyle ="#F7FCB0";
+      contexto.fillRect(50,120,150,130);
+      contexto.fillStyle="pink";
+      contexto.fillRect(55,250,140,10);
+      //marco
+
+      contexto.fillStyle = "white";
+      contexto.fillRect(90,190,70,60);
+      contexto.fillRect(70,150,10,100);
+      contexto.fillRect(170,150,10,100);
+      contexto.beginPath();
+      contexto.arc(125,190,35,0,Math.PI*2,false);
+      contexto.fill();
+      //
+      contexto.fillStyle = "pink";
+      contexto.fillRect(95,190,60,60);
+      contexto.beginPath();
+      contexto.arc(125,190,30,0,Math.PI*2,false);
+      contexto.fill();
+
+    //reloj
+    contexto.fillStyle="#C2BCB0";
+    contexto.beginPath();
+    contexto.arc(125,190,25,0,Math.PI*2,false);
+    contexto.fill();
+ //Creo una imagen conun objeto Image de Javascript
+ var img = new Image();
+ //indico la URL de la imagen
+ img.src = 'RELOJ.png';
+ //defino el evento onload del objeto imagen
+ img.onload = function(){
+   //incluyo la imagen en el canvas
+
+     contexto.drawImage(img, 140, 190, 1400 , 4000, 100, 170, 50, 140);
+
+}
+y2=145;
+for(i=0; i< 8; i++){
+contexto.fillStyle="pink";
+contexto.fillRect(70,y2,10,5);
+contexto.fillRect(170,y2,10,5);
+y2=y2+15;
+}
+contexto.fillStyle="white";
+contexto.fillRect(98,220,54,30);
+
+//detalle
+contexto.fillStyle = "#F7FCB0";
+contexto.beginPath();
+contexto.arc(125,120,75,3.1,Math.PI*2,false);
+contexto.fill();
+//segunda media luna
+contexto.beginPath();
+contexto.arc(125,57,40,3.1,Math.PI*2,false);
+contexto.fill();
+contexto.fillStyle="pink";
+contexto.fillRect(30,120,190,10);
+
+//parte superior
+contexto.fillStyle="#F7FCB0";
+contexto.fillRect(200,350,480,50);
+contexto.fillRect(680,300,70,100);
+contexto.fillRect(670,290,90,10);
+contexto.fillRect(690,275,50,15);
+
+
+contexto.beginPath();
+contexto.arc(300,345,30,0,Math.PI*2,false);
+contexto.fill();
+
+contexto.beginPath();
+contexto.arc(600,345,30,0,Math.PI*2,false);
+contexto.fill();
+
+
+contexto.fillRect(300,305,300,45);
+
+contexto.beginPath();
+contexto.arc(450,345,130,0,Math.PI*2,false);
+contexto.fill();
+//para rayos
+contexto.fillStyle="gray";
+contexto.fillRect(715,130,3,145);
+//detalles
+
+dx=350;
+dx2=355;
+for(i=0; i< 4; i++){
+  contexto.fillStyle="white";
+contexto.fillRect(dx,310,30,45);
+contexto.fillStyle="pink";
+contexto.fillRect(dx2,315,20,35);
+dx=dx+60;
+dx2=dx2+60;
+}
+contexto.fillStyle="white";
+contexto.beginPath();
+contexto.arc(450,300,75,3.15,Math.PI*2,false);
+contexto.fill();
+//arco rosa
+contexto.fillStyle="pink";
+contexto.beginPath();
+contexto.arc(450,295,65,3.15,Math.PI*2,false);
+contexto.fill();
+contexto.fillStyle="#FA8BD5";
+x1=400;
+y1=262;
+x2=410;
+for(i=0;i<6;i++){
+contexto.fillRect(x1,252,10,10);
+contexto.fillRect(x2,y1,10,10);
+x1=x1+17;
+x2=x2+16;
+
+}
+//cruz
+contexto.fillStyle="white";
+contexto.fillRect(445,115,10,100);
+contexto.fillRect(425,130,50,10);
+contexto.fillStyle="gray";
+contexto.fillRect(447,120,5,90);
+contexto.fillRect(435,133,30,5);
+
+//puerta
+contexto.fillStyle="brown";
+contexto.fillRect(310,640,300,150);
+contexto.beginPath();
+contexto.arc(460,670,150,3.15,Math.PI*2,false);
+contexto.fill();
+contexto.fillStyle="black";
+contexto.fillRect(460,640,5,150);
+contexto.fillRect(310,640,300,5);
+//mancuerna
+contexto.beginPath();
+contexto.arc(440,730,10,3.15,Math.PI*2,false);
+contexto.fill();
+contexto.beginPath();
+contexto.arc(480,730,10,3.15,Math.PI*2,false);
+contexto.fill();
+//columna central
+contexto.fillStyle="white";
+contexto.fillRect(240,440,80,100);
+contexto.fillRect(610,440,80,100);
+contexto.fillRect(420,400,80,100);
+contexto.fillStyle="pink";
+contexto.fillRect(250,450,60,80);
+contexto.fillRect(620,450,60,80);
+contexto.fillRect(430,410,60,80);
+
+//
+contexto.fillStyle="white";
+contexto.fillRect(220,420,10,120);
+contexto.fillRect(330,420,10,120);
+
+
+    }
+  }
+}
+
+
+    </script>
+  </head>
+  <body Gradiente1>
+    <canvas id="micanvas" width="1200" height="1000" > Este texto se muestra para los navegadores no compatibles con canvas.
+      <br> Por favor, utiliza Firefox, Chrome, Safari u Opera.
+    </canvas>
+
+  </body>
+
+
+</html>
